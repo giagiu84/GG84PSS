@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GG84 KeySync2™</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .input-container {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .centered-button {
+      display: block;
+      margin: 5px auto 15px auto;
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>GG84 KeySync2™</h1>
+  <div class="input-container">
+    <label>1. Inserisci la tua Password Privata</label>
+    <input type="password" id="privateKey" placeholder="Inserisci Password Privata" />
+    <button type="button" id="togglePasswordBtn" onclick="togglePassword()" class="centered-button">👁️</button>
+    <button onclick="generatePublic()">🔐 Genera la Tua Chiave Pubblica</button>
+    <div id="publicKey"></div>
+    <button onclick="copyPub()">📄 Copia Chiave da Inviare</button>
+  </div>
+
+  <div class="input-container">
+    <label>2. Inserisci la Chiave Pubblica ricevuta dall'altro</label>
+    <input type="text" id="receivedPubKey" placeholder="Chiave pubblica ricevuta"/>
+    <button onclick="generateSharedSecret()">🔐 Calcola Password Comune</button>
+    <div id="sharedSecret"></div>
+    <button onclick="copySharedSecret()">📄 Copia Password Comune</button>
+  </div>
+
+  <script src="script.js"></script>
+
+  
+  <div class="input-container" style="text-align: center; margin-top: 30px;">
+    <a href="app.html">
+      <button>⬅️ Torna alla Home</button>
+    </a>
+  </div>
+</body>
+</html>

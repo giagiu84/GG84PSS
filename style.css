@@ -1,0 +1,61 @@
+
+body {
+    background-color: #111;
+    color: #ccff00;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #ccff00;
+}
+
+div {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #ff00aa;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    background: #222;
+    color: #ccff00;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff00aa;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ccff00;
+    color: black;
+}
+
+#publicKey, #sharedSecret {
+    background-color: #222;
+    color: #00ffff;
+    padding: 10px;
+    font-family: monospace;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
